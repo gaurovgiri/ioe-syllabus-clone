@@ -23,9 +23,13 @@ class MyApp extends StatelessWidget {
                 )
               ],
             ),
-            body: GridView.count(
-              crossAxisCount: 3,
-              children: <Widget>[
+            body: Column(children: [
+              Image.asset(
+                "assets/images/1.jpg",
+                height: 200,
+                width: 300,
+              ),
+              GridView.count(crossAxisCount: 3, children: <Widget>[
                 Column(
                   children: <Widget>[
                     IconButton(
@@ -115,15 +119,15 @@ class MyApp extends StatelessWidget {
                     ),
                     Text('Youtube')
                   ],
-                ),
-              ],
-            ),
+                )
+              ]),
+            ]),
             bottomNavigationBar: BottomNavigationBar(
               backgroundColor: Colors.red,
               selectedItemColor: Colors.white,
-              items: [
+              items: const [
                 BottomNavigationBarItem(
-                  icon: const Icon(Icons.home),
+                  icon: Icon(Icons.home),
                   label: 'Home',
                   backgroundColor: Colors.red,
                 ),

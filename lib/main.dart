@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ioe_syllabus_clone/config/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'features/presentation/app_bar_design.dart';
+import 'features/App_Bar/presentation/app_bar_design.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
